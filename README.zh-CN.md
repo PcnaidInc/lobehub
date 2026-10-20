@@ -735,6 +735,14 @@ $ pnpm run dev
 
 </div>
 
+## CI
+
+CI 工作流在每次 pull request 和推送到 `main` 分支时运行，包括以下检查：
+- **Lint**：ESLint、Stylelint、循环依赖检查
+- **Type Check**：通过 `tsgo` 进行 TypeScript 类型检查
+- **Test**：通过 Vitest 运行单元测试
+- **Build**：生产构建验证
+
 ## 🤝 参与贡献
 
 我们非常欢迎各种形式的贡献。如果你对贡献代码感兴趣，可以查看我们的 GitHub [Issues][github-issues-link] 和 [Projects][github-project-link]，大展身手，向我们展示你的奇思妙想。
