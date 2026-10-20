@@ -720,6 +720,14 @@ If you would like to learn more details, please feel free to look at our [📘 D
 
 </div>
 
+## CI
+
+The CI workflow runs on every pull request and push to `main`. It checks:
+- **Lint**: ESLint, Stylelint, circular dependency check
+- **Type Check**: TypeScript type checking via `tsgo`
+- **Test**: Unit tests via Vitest
+- **Build**: Production build verification
+
 ## 🤝 Contributing
 
 Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] and [Projects][github-project-link] to get stuck in to show us what you're made of.
